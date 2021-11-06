@@ -29,6 +29,8 @@ jobs:
                 gu install native-image
             - name: Build native image
               run: ./build.sh
+            - name: Get Azure credential
+              run : echo "::set-output name=login_cred::${{ secrets.DEV_01 }}"
             - name: Login to Azure
               uses: azure/login@v1.1
               with:
