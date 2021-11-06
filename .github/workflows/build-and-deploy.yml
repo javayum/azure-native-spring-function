@@ -30,7 +30,7 @@ jobs:
             - name: Build native image
               run: ./build.sh
             - name: Get Azure credential
-              run : echo "::set-output name=login_cred::${{ secrets.DEV_01 }}"
+              run : echo "::set-output name=login_cred::${{ secrets.AZURE_CREDENTIALS }}"
             - name: Login to Azure
               uses: azure/login@v1.1
               with:
