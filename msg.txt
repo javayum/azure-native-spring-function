@@ -1,2 +1,16 @@
+az acr update -n javayumregistry01 --admin-enabled true
 az acr credential show --resource-group Pay-RG-02-DockerImage --name javayumregistry01
+{
+  "passwords": [
+    {
+      "name": "password",
+      "value": "+YVuTvCTkmCmnCxDFq1Ri0pPcMJUB9wg"
+    },
+    {
+      "name": "password2",
+      "value": "ZQc6q5/Um4v1OfJZJdAtxjlccXFH4sFu"
+    }
+  ],
+  "username": "javayumregistry01"
+}
 
