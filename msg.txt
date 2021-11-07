@@ -14,4 +14,4 @@ az acr credential show --resource-group Pay-RG-02-DockerImage --name javayumregi
   "username": "javayumregistry01"
 }
 
-az webapp create --resource-group Pay-RG-02-DockerImage --plan Pay-RG-02-App-Service-Plan-01 --name Pay-RG-02-WebApp-01 --deployment-container-image-name javayumregistry01.azurecr.io/ zo-predictor-nacebel-r:latest
+az webapp create --resource-group Pay-RG-02-DockerImage --plan Pay-RG-02-App-Service-Plan-01 --name Pay-RG-02-WebApp-02 --deployment-container-image-name javayumregistry01.azurecr.io/zo-predictor-nacebel-r:1.0-SNAPSHOT --docker-registry-server-user javayumregistry01 --docker-registry-server-password +YVuTvCTkmCmnCxDFq1Ri0pPcMJUB9wg
