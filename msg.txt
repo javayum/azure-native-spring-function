@@ -1,1 +1,2 @@
+az acr credential show --resource-group Pay-RG-02-DockerImage --name javayumregistry01
 
